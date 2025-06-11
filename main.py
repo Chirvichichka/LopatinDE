@@ -1,9 +1,10 @@
-import tkinter as tk
-from database.database import Database
-from business.material_service import MaterialService
-from gui.main_window import MainWindow
-from database.load_data import load_all_data
 import os
+import tkinter as tk
+
+from business.material_service import MaterialService
+from database.database import Database
+from database.load_data import load_all_data
+from gui.main_window import MainWindow
 
 
 def main():

@@ -1,9 +1,10 @@
-import pandas as pd
 import os
-from sqlalchemy.exc import SQLAlchemyError
+
+import pandas as pd
+
 from .database import Database
 from .models import MaterialType, Material, ProductType, Product, material_product
-from sqlalchemy import func
+
 
 def load_material_types(db: Database, file_path: str):
     """Загрузка типов материалов из Excel"""

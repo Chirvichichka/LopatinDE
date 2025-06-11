@@ -1,8 +1,8 @@
-from sqlalchemy import func
-from database.database import Database
-from database.models import Material, Product, material_product, ProductType, MaterialType
 from sqlalchemy.exc import SQLAlchemyError
 from sqlalchemy.orm import joinedload
+
+from database.database import Database
+from database.models import Material, Product, material_product, ProductType, MaterialType
 
 
 class MaterialService:

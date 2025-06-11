@@ -1,7 +1,7 @@
+import os
 import tkinter as tk
 from tkinter import ttk, messagebox
-from database.models import MaterialType
-import os
+
 
 class MaterialDialog:
     def __init__(self, parent, material_service, material=None):

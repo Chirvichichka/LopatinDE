@@ -1,11 +1,11 @@
-import tkinter as tk
-from tkinter import ttk, messagebox
-from PIL import Image, ImageTk
 import os
-from business.material_service import MaterialService
+import tkinter as tk
+from tkinter import ttk
+
+from PIL import Image, ImageTk
+
 from gui.material_dialog import MaterialDialog
 from gui.products_window import ProductsWindow
-from database.models import MaterialType
 
 
 class MainWindow:

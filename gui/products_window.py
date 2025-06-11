@@ -1,6 +1,8 @@
 import tkinter as tk
 from tkinter import ttk
+
 from database.models import material_product
+
 
 class ProductsWindow:
     def __init__(self, parent, material_service, material):
