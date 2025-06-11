@@ -53,7 +53,7 @@ class Product(Base):
     name = Column(String, nullable=False)
     article = Column(String, nullable=False, unique=True)
     min_partner_price = Column(Float, nullable=True)
-    quantity = Column(Float, nullable=True, default=0.0)  # Добавляем поле quantity
+    quantity = Column(Float, nullable=True, default=0.0)
 
     type = relationship("ProductType", back_populates="products")
     materials = relationship("Material", secondary=material_product, back_populates="products")

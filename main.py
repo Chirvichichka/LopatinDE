@@ -8,7 +8,7 @@ from gui.main_window import MainWindow
 
 
 def main():
-    # Проверяем, существует ли база данных
+    # Проверка существует ли база данных
     if not os.path.exists("materials.db"):
         print("База данных не найдена. Начинаем загрузку данных...")
         load_all_data()
@@ -30,6 +30,6 @@ def main():
     root.app = app
     root.mainloop()
 
-
+# Точка входа в программу
 if __name__ == "__main__":
     main()

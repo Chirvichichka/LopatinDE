@@ -4,7 +4,7 @@ from sqlalchemy.orm import joinedload
 from database.database import Database
 from database.models import Material, Product, material_product, ProductType, MaterialType
 
-
+#Сервис прослойка между интерфейсом и базой данных
 class MaterialService:
     def __init__(self, db: Database):
         self.db = db
